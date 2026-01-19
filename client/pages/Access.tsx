@@ -87,7 +87,7 @@ function MainGateContent() {
 
       <div className="space-y-6">
         {/* Video */}
-        <div className="rounded-lg overflow-hidden">
+        <div className="rounded-lg overflow-hidden w-full max-w-sm mx-auto md:max-w-md">
           <video
             src="https://cdn.builder.io/o/assets%2F4e6b85d030c74f6387398b4b4e289006%2Faed09d53dda34ecda8052779d50cb92a?alt=media&token=35b20b38-3108-4dab-bb5c-acb8e83809dc&apiKey=4e6b85d030c74f6387398b4b4e289006"
             autoPlay
@@ -130,7 +130,7 @@ function ApartmentContent() {
 
       <div className="space-y-6">
         {/* Video */}
-        <div className="rounded-lg overflow-hidden">
+        <div className="rounded-lg overflow-hidden w-full max-w-sm mx-auto md:max-w-md">
           <video
             src="https://cdn.builder.io/o/assets%2F4e6b85d030c74f6387398b4b4e289006%2F978fa66f33824aa1af31113989b0e6f8?alt=media&token=a15d6393-0ede-4c9c-8f1c-e1e83451556f&apiKey=4e6b85d030c74f6387398b4b4e289006"
             autoPlay
