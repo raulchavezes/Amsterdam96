@@ -114,13 +114,13 @@ function ApartmentContent() {
   return (
     <div className="space-y-6">
       <div className="space-y-3">
-        <h2 
+        <h2
           className="text-base font-normal tracking-[-0.02em]"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
           How to get into the apartment?
         </h2>
-        <p 
+        <p
           className="text-xl font-light tracking-[-0.02em]"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
@@ -129,17 +129,20 @@ function ApartmentContent() {
       </div>
 
       <div className="space-y-6">
-        {/* Image */}
+        {/* Video */}
         <div className="rounded-lg overflow-hidden">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/cb2d92a5f8e0176063f1ba16e52aeb651efd1631"
-            alt="Apartment Yale access control"
-            className="w-full h-auto object-cover"
+          <video
+            src="https://cdn.builder.io/o/assets%2F4e6b85d030c74f6387398b4b4e289006%2F978fa66f33824aa1af31113989b0e6f8?alt=media&token=a15d6393-0ede-4c9c-8f1c-e1e83451556f&apiKey=4e6b85d030c74f6387398b4b4e289006"
+            autoPlay
+            loop
+            muted
+            controls
+            className="w-full h-auto object-cover bg-black"
           />
         </div>
 
         {/* Instructions */}
-        <p 
+        <p
           className="text-xs font-normal leading-[125.5%] tracking-[-0.02em]"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
