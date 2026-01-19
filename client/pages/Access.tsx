@@ -71,13 +71,13 @@ function MainGateContent() {
   return (
     <div className="space-y-6">
       <div className="space-y-3">
-        <h2 
+        <h2
           className="text-base font-normal tracking-[-0.02em]"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
           How to get into the building?
         </h2>
-        <p 
+        <p
           className="text-xl font-light tracking-[-0.02em]"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
@@ -86,26 +86,20 @@ function MainGateContent() {
       </div>
 
       <div className="space-y-6">
-        {/* Image 1 */}
+        {/* Video */}
         <div className="rounded-lg overflow-hidden">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/ccf4004d4cd8bf09d4e4c3324569b73982b847cf"
-            alt="Main gate access control panel"
-            className="w-full h-auto object-cover"
-          />
-        </div>
-
-        {/* Image 2 */}
-        <div className="rounded-lg overflow-hidden">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/fd4b99e7c59c4d5bd7dee10a312c130bce75d053"
-            alt="Access control keypad closeup"
-            className="w-full h-auto object-cover"
+          <video
+            src="https://cdn.builder.io/o/assets%2F4e6b85d030c74f6387398b4b4e289006%2Faed09d53dda34ecda8052779d50cb92a?alt=media&token=35b20b38-3108-4dab-bb5c-acb8e83809dc&apiKey=4e6b85d030c74f6387398b4b4e289006"
+            autoPlay
+            loop
+            muted
+            controls
+            className="w-full h-auto object-cover bg-black"
           />
         </div>
 
         {/* Instructions */}
-        <p 
+        <p
           className="text-xs font-normal leading-[125.5%] tracking-[-0.02em]"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
