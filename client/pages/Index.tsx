@@ -8,9 +8,30 @@ export default function Index() {
   const [isWiFiModalOpen, setIsWiFiModalOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-white">
+    <div className="relative min-h-screen overflow-hidden">
       {/* Gradient Background */}
-      <GradientBackground />
+      <div className="absolute inset-0 bg-white">
+        <div
+          className="absolute w-[500px] h-[500px] rounded-full"
+          style={{
+            left: '-10%',
+            top: '10%',
+            background: 'linear-gradient(180deg, #FF9F39 0%, rgba(178, 178, 245, 0.52) 100%)',
+            filter: 'blur(100px)',
+            opacity: 0.9
+          }}
+        />
+        <div
+          className="absolute w-[550px] h-[550px] rounded-full"
+          style={{
+            right: '-15%',
+            top: '15%',
+            background: 'linear-gradient(135deg, rgba(156, 57, 255, 0.6) 0%, rgba(34, 34, 108, 0.52) 100%)',
+            filter: 'blur(100px)',
+            opacity: 0.9
+          }}
+        />
+      </div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-between min-h-screen px-7 py-12">
