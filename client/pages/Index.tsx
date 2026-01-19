@@ -8,9 +8,9 @@ export default function Index() {
   const [isWiFiModalOpen, setIsWiFiModalOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-white">
+      <div className="fixed inset-0 -z-10 bg-white overflow-hidden">
         <div
           className="absolute w-[500px] h-[500px] rounded-full"
           style={{
@@ -34,17 +34,17 @@ export default function Index() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-between min-h-screen px-7 py-12">
+      <div className="relative z-10 flex flex-col items-center px-7 py-12 min-h-screen">
         {/* Main Content */}
-        <div className="flex-1 flex flex-col justify-center items-start w-full max-w-md">
-          <div className="space-y-2 mb-auto pt-32">
-            <h1 
+        <div className="flex flex-col justify-center items-center w-full max-w-md pt-32 pb-16">
+          <div className="space-y-2">
+            <h1
               className="text-[32px] font-normal leading-normal"
               style={{ fontFamily: 'Merriweather, serif' }}
             >
               Hello Kari
             </h1>
-            <p 
+            <p
               className="text-2xl font-light tracking-[0.06em] leading-normal"
               style={{ fontFamily: 'Merriweather, serif' }}
             >
@@ -54,7 +54,7 @@ export default function Index() {
         </div>
 
         {/* Bottom Section */}
-        <div className="w-full max-w-md space-y-8 mb-8">
+        <div className="w-full max-w-md space-y-8 pb-16">
           {/* WiFi Icon */}
           <div className="flex justify-center">
             <button
@@ -99,7 +99,7 @@ export default function Index() {
         </div>
 
         {/* Home Indicator (iOS style) */}
-        <div className="w-full flex justify-center pb-2">
+        <div className="w-full flex justify-center pt-8">
           <div className="w-32 h-1 bg-black/80 rounded-full" />
         </div>
       </div>
