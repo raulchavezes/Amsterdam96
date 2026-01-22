@@ -67,13 +67,13 @@ export default function Index() {
           </div>
 
           {/* Address */}
-          <div className="flex items-center justify-center gap-2 px-16">
+          <div className="flex items-center justify-center gap-2 px-16 flex-wrap">
             <MapPin className="w-6 h-6 text-black flex-shrink-0" />
             <a
               href="https://maps.google.com/?q=Carmina+Selva+Viva"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl font-normal text-center tracking-[0.06em] underline decoration-from-font"
+              className="text-xl font-normal text-center tracking-[0.06em] underline decoration-from-font whitespace-nowrap"
               style={{ fontFamily: 'Merriweather, serif' }}
             >
               Carmina Selva Viva
