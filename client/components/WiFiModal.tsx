@@ -9,15 +9,15 @@ export default function WiFiModal({ isOpen, onClose }: WiFiModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center">
+    <div className="fixed inset-0 z-50 flex items-start justify-center md:items-end">
       {/* Backdrop */}
-      <div 
-        className="absolute inset-0 bg-black/20" 
+      <div
+        className="absolute inset-0 bg-black/20"
         onClick={onClose}
       />
-      
+
       {/* Modal */}
-      <div className="relative w-full max-w-sm mx-4 mb-4 bg-white rounded-xl shadow-2xl animate-in slide-in-from-bottom duration-300">
+      <div className="relative w-full max-w-sm mx-4 mt-12 md:mb-4 bg-white rounded-xl shadow-2xl animate-in slide-in-from-top md:slide-in-from-bottom duration-300">
         <div className="p-4">
           {/* Header */}
           <div className="flex items-start justify-between mb-4">
