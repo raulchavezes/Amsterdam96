@@ -28,7 +28,7 @@ export default function Access() {
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-4 md:gap-8 px-4 md:px-14 py-4">
+        <div className="flex justify-center gap-4 md:gap-8 px-4 md:px-14 py-4 pb-6">
           <button
             onClick={() => setActiveTab("main-gate")}
             className={`text-lg md:text-2xl font-light tracking-[0.06em] transition-all whitespace-nowrap ${
