@@ -59,8 +59,8 @@ export default function Access() {
         </div>
 
         {/* Home Indicator */}
-        <div className="w-full flex justify-center pb-5 pt-4">
-          <div className="w-32 h-1 bg-black/80 rounded-full" />
+        <div className="fixed bottom-3 left-0 right-0 flex justify-center z-20 pointer-events-none">
+          <div className="w-32 h-1 bg-black rounded-full opacity-30" />
         </div>
       </div>
     </div>
