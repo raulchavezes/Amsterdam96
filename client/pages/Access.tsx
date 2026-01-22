@@ -131,15 +131,16 @@ function ApartmentContent() {
 
       <div className="space-y-6">
         {/* Video */}
-        <div className="rounded-lg overflow-hidden w-full">
-          <video
-            src="https://cdn.builder.io/o/assets%2F4e6b85d030c74f6387398b4b4e289006%2F978fa66f33824aa1af31113989b0e6f8?alt=media&token=a15d6393-0ede-4c9c-8f1c-e1e83451556f&apiKey=4e6b85d030c74f6387398b4b4e289006"
-            autoPlay
-            loop
-            muted
-            controls
-            className="w-full h-auto object-cover bg-black"
-          />
+        <div className="flex justify-center">
+          <div className="rounded-lg overflow-hidden w-full max-w-xs">
+            <video
+              src="https://cdn.builder.io/o/assets%2F4e6b85d030c74f6387398b4b4e289006%2F978fa66f33824aa1af31113989b0e6f8?alt=media&token=a15d6393-0ede-4c9c-8f1c-e1e83451556f&apiKey=4e6b85d030c74f6387398b4b4e289006"
+              loop
+              muted
+              controls
+              className="w-full h-auto max-h-56 object-cover bg-black"
+            />
+          </div>
         </div>
 
         {/* Instructions */}
