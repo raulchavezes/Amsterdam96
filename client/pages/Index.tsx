@@ -99,8 +99,8 @@ export default function Index() {
         </div>
 
         {/* Home Indicator (iOS style) */}
-        <div className="w-full flex justify-center pt-8">
-          <div className="w-32 h-1 bg-black/80 rounded-full" />
+        <div className="fixed bottom-3 left-0 right-0 flex justify-center z-20 pointer-events-none">
+          <div className="w-32 h-1 bg-black rounded-full opacity-30" />
         </div>
       </div>
 
