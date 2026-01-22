@@ -87,15 +87,16 @@ function MainGateContent() {
 
       <div className="space-y-6">
         {/* Video */}
-        <div className="rounded-lg overflow-hidden w-full">
-          <video
-            src="https://cdn.builder.io/o/assets%2F4e6b85d030c74f6387398b4b4e289006%2Faed09d53dda34ecda8052779d50cb92a?alt=media&token=35b20b38-3108-4dab-bb5c-acb8e83809dc&apiKey=4e6b85d030c74f6387398b4b4e289006"
-            autoPlay
-            loop
-            muted
-            controls
-            className="w-full h-auto object-cover bg-black"
-          />
+        <div className="flex justify-center">
+          <div className="rounded-lg overflow-hidden w-full max-w-xs">
+            <video
+              src="https://cdn.builder.io/o/assets%2F4e6b85d030c74f6387398b4b4e289006%2Faed09d53dda34ecda8052779d50cb92a?alt=media&token=35b20b38-3108-4dab-bb5c-acb8e83809dc&apiKey=4e6b85d030c74f6387398b4b4e289006"
+              loop
+              muted
+              controls
+              className="w-full h-auto max-h-56 object-cover bg-black"
+            />
+          </div>
         </div>
 
         {/* Instructions */}
