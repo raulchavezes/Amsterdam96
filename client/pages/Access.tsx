@@ -112,12 +112,20 @@ function MainGateContent() {
         </div>
 
         {/* Instructions */}
-        <p
-          className="text-xs font-normal leading-[125.5%] tracking-[-0.02em] text-left"
+        <div
+          className="text-xs font-normal leading-[125.5%] tracking-[-0.02em] text-left space-y-3"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
-          Find the access control and enter the code. The gate should open automatically.
-        </p>
+          <p>
+            Encuentra el control de acceso e introduce el código. La puerta debería abrirse automáticamente con el código 1133.
+          </p>
+          <p>
+            En caso inusual que el acceso electrónico no esté funcionando, hay una caja con clave manual que tiene una llave guardada. La clave de la caja es 4233.
+          </p>
+          <p>
+            Si es necesario usar la llave, favor de dejarla nuevamente en la caja y cerrarla.
+          </p>
+        </div>
       </div>
     </div>
   );
