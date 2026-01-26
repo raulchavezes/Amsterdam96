@@ -57,7 +57,13 @@ export default function Access() {
 
         {/* Content Area */}
         <div className="flex-1 px-4 md:px-8 pb-24 overflow-y-auto w-full flex justify-center">
-          {activeTab === "main-gate" ? <MainGateContent /> : <ApartmentContent />}
+          {activeTab === "main-gate" ? (
+            <MainGateContent
+              onVehicleAccessClick={() => setIsVehicleAccessModalOpen(true)}
+            />
+          ) : (
+            <ApartmentContent />
+          )}
         </div>
 
         {/* Home Indicator */}
