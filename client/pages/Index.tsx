@@ -93,7 +93,7 @@ export default function Index() {
               className="block text-base font-normal italic tracking-[0.06em] underline decoration-from-font"
               style={{ fontFamily: 'Merriweather, serif' }}
             >
-              how to get in?
+              <p>¿cómo entrar?</p>
             </Link>
           </div>
         </div>
