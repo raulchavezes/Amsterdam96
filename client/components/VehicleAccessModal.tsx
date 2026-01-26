@@ -58,7 +58,7 @@ export default function VehicleAccessModal({ isOpen, onClose }: VehicleAccessMod
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F4e6b85d030c74f6387398b4b4e289006%2Fca862888e89c43caabe9d80f8aa4e519?format=webp&width=800&height=1200"
                 alt="Parking space A9"
-                className="w-full h-auto object-cover"
+                className="w-full h-64 object-cover"
               />
             </div>
 
