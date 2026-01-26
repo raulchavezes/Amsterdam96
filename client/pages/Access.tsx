@@ -49,7 +49,7 @@ export default function Access() {
             }`}
             style={{ fontFamily: 'Merriweather, serif' }}
           >
-            apartment
+            departamento
           </button>
         </div>
 
