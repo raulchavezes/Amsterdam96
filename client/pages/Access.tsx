@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import GradientBackground from "@/components/GradientBackground";
+import VehicleAccessModal from "@/components/VehicleAccessModal";
 
 type TabType = "main-gate" | "apartment";
 
