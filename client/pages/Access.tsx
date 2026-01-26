@@ -81,7 +81,7 @@ export default function Access() {
   );
 }
 
-function MainGateContent() {
+function MainGateContent({ onVehicleAccessClick }: { onVehicleAccessClick: () => void }) {
   return (
     <div className="w-full max-w-sm space-y-6">
       <div className="space-y-3">
@@ -91,6 +91,13 @@ function MainGateContent() {
         >
           ¿Cómo acceder al edificio?
         </h2>
+        <button
+          onClick={onVehicleAccessClick}
+          className="block text-base font-normal italic tracking-[0.06em] underline decoration-from-font cursor-pointer hover:opacity-70 transition-opacity"
+          style={{ fontFamily: 'Merriweather, serif', color: '#212530', background: 'none', border: 'none', padding: 0, margin: 0 }}
+        >
+          acceso vehicular
+        </button>
         <p
           className="text-xl font-light tracking-[-0.02em] text-left"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
