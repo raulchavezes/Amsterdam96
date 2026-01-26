@@ -7,6 +7,7 @@ type TabType = "main-gate" | "apartment";
 
 export default function Access() {
   const [activeTab, setActiveTab] = useState<TabType>("main-gate");
+  const [isVehicleAccessModalOpen, setIsVehicleAccessModalOpen] = useState(false);
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-white">
