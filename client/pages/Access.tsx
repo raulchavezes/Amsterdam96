@@ -38,7 +38,7 @@ export default function Access() {
             }`}
             style={{ fontFamily: 'Merriweather, serif' }}
           >
-            main gate
+            edificio
           </button>
           <button
             onClick={() => setActiveTab("apartment")}
