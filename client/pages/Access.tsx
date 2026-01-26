@@ -71,6 +71,12 @@ export default function Access() {
           <div className="w-32 h-1 bg-black rounded-full opacity-30" />
         </div>
       </div>
+
+      {/* Vehicle Access Modal */}
+      <VehicleAccessModal
+        isOpen={isVehicleAccessModalOpen}
+        onClose={() => setIsVehicleAccessModalOpen(false)}
+      />
     </div>
   );
 }
