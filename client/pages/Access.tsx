@@ -145,7 +145,7 @@ function ApartmentContent() {
           className="text-xl font-light tracking-[-0.02em] text-left"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
-          Code:{" "}
+          Código:{" "}
           <strong>
             <u>0117</u>
           </strong>
