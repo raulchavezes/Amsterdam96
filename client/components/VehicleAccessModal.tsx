@@ -17,38 +17,27 @@ export default function VehicleAccessModal({ isOpen, onClose }: VehicleAccessMod
       />
       
       {/* Modal */}
-      <div className="relative w-full max-w-sm mx-4 mt-12 md:mb-4 bg-white rounded-xl shadow-2xl animate-in slide-in-from-top md:slide-in-from-bottom duration-300">
-        <div className="p-4">
-          {/* Header */}
-          <div className="flex items-start justify-between mb-4">
-            <h2 
-              className="text-[28px] font-bold leading-tight tracking-[-0.02em]"
-              style={{ fontFamily: 'Merriweather, serif', color: '#212530' }}
-            >
-              Acceso en carro
-            </h2>
-            <button
-              onClick={onClose}
-              className="p-2 -mr-2 -mt-2 rounded-lg hover:bg-gray-100 transition-colors"
-              aria-label="Close"
-            >
-              <X className="w-5 h-5" />
-            </button>
-          </div>
+      <div className="relative w-full max-w-sm mx-4 mt-12 md:mb-4 bg-white rounded-xl shadow-2xl animate-in slide-in-from-top md:slide-in-from-bottom duration-300 flex flex-col max-h-[90vh]">
+        {/* Header */}
+        <div className="sticky top-0 bg-white rounded-t-xl p-4 border-b border-gray-200 flex items-start justify-between z-10">
+          <h2
+            className="text-[28px] font-bold leading-tight tracking-[-0.02em]"
+            style={{ fontFamily: 'Merriweather, serif', color: '#212530' }}
+          >
+            Acceso en carro
+          </h2>
+          <button
+            onClick={onClose}
+            className="p-2 -mr-2 -mt-2 rounded-lg hover:bg-gray-100 transition-colors"
+            aria-label="Close"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
 
-          {/* Divider */}
-          <div className="border-t border-gray-200 mb-4" />
-
-          {/* Content */}
+        {/* Content - Scrollable */}
+        <div className="p-4 overflow-y-auto">
           <div className="space-y-4">
-            <p
-              className="text-sm tracking-[-0.02em] text-left"
-              style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
-            >
-              ¿Si accedes en carro estas son las instrucciones de llegada:
-            </p>
-
-            <div className="border-t border-gray-200" />
 
             <div className="space-y-3 text-xs tracking-[-0.02em] text-left"
               style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}>
