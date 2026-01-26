@@ -81,7 +81,19 @@ function MainGateContent() {
           className="text-xl font-light tracking-[-0.02em] text-left"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
-          Code: 1133
+          <span>
+            <span>
+              <span>Código</span>
+              <span>
+                <strong>: </strong>
+                <span>
+                  <strong>
+                    <u>1133</u>
+                  </strong>
+                </span>
+              </span>
+            </span>
+          </span>
         </p>
       </div>
 
