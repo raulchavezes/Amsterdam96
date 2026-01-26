@@ -167,14 +167,23 @@ function ApartmentContent() {
         </div>
 
         {/* Instructions */}
-        <p
-          className="text-xs font-normal leading-[125.5%] tracking-[-0.02em] text-left"
+        <div
+          className="text-xs font-normal leading-[125.5%] tracking-[-0.02em] text-left space-y-3"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
-          Locate apartment 9A, on the third floor on the apartments that are "closer" to the street. The other row of apartments are part of "building B".
-          {"\n\n"}
-          Find the Yale & Nest Access Control. Tap on the Yale logo to activate the keyboard, enter your code and tap on the lower right corner on the checkmark ✔️
-        </p>
+          <p>
+            Encuentra el departamento 9A en el 3er piso piso. Una vez que subas las escaleras son los departamentos de la izquierda (fila más cercana a la calle)
+          </p>
+          <p>
+            Es el 3er departamento que tiene una cerradura Yale / Nest para el control de acceso.
+          </p>
+          <p>
+            Da un toque en el logo de Yale para activar el teclado, ingresa el código y presiona la "palomita" en la esquina inferior derecha para abrir la puerta ✔️
+          </p>
+          <p>
+            La puerta se cerrará automáticamente después de 10 segundos. Puedes cerrarla manualmente si fuese necesario.
+          </p>
+        </div>
       </div>
     </div>
   );
