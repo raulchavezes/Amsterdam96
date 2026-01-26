@@ -139,7 +139,7 @@ function ApartmentContent() {
           className="text-base font-normal tracking-[-0.02em] text-left"
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
-          How to get into the apartment?
+          ¿Cómo acceder al departamento 9A?
         </h2>
         <p
           className="text-xl font-light tracking-[-0.02em] text-left"
