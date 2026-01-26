@@ -82,11 +82,11 @@ export default function Index() {
 
           {/* Apartment Info */}
           <div className="text-center space-y-1">
-            <p 
+            <p
               className="text-xl font-light tracking-[0.06em]"
               style={{ fontFamily: 'Merriweather, serif' }}
             >
-              Apartment 9A
+              Departamento 9A
             </p>
             <Link
               to="/access"
