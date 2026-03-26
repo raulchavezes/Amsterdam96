@@ -109,8 +109,8 @@ function MainGateContent({ onVehicleAccessClick }: { onVehicleAccessClick: () =>
                 <strong>: </strong>
                 <span>
                   <strong>
-                    <u>1133</u>
-                  </strong>
+            <u>1126</u>
+          </strong>
                 </span>
               </span>
             </span>
@@ -138,7 +138,7 @@ function MainGateContent({ onVehicleAccessClick }: { onVehicleAccessClick: () =>
           style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
         >
           <p>
-            Encuentra el control de acceso e introduce el código. La puerta debería abrirse automáticamente con el código 1133.
+            Encuentra el control de acceso e introduce el código. La puerta debería abrirse automáticamente con el código 1126.
           </p>
           <p>
             En caso inusual que el acceso electrónico no esté funcionando, hay una caja con clave manual que tiene una llave guardada. La clave de la caja es 4233.
