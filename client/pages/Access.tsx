@@ -168,7 +168,7 @@ function ApartmentContent() {
         >
           Código:{" "}
           <strong>
-            <u>0117</u>
+            <u>6810</u>
           </strong>
         </p>
       </div>
