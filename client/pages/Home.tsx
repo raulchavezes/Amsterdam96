@@ -83,7 +83,7 @@ export default function Home() {
             className="mt-3 flex w-full items-center justify-between gap-3 rounded-xl border border-black/10 bg-white/60 px-4 py-3.5 text-left shadow-sm backdrop-blur-sm transition-colors hover:bg-white/80"
             style={{ fontFamily: "Open Sans, sans-serif", color: "#212530" }}
           >
-            <span className="text-base font-semibold tracking-[-0.02em]">
+            <span className="text-sm font-semibold tracking-[-0.02em] whitespace-nowrap">
               How to get into the apartment?
             </span>
             <span className="flex items-center gap-1 shrink-0">
