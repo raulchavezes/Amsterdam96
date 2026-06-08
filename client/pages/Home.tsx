@@ -114,7 +114,7 @@ export default function Home() {
           </h2>
           <div className="border-t border-gray-200">
             {neighborhoodLinks.map((l) => (
-              <LinkRow key={l.label} label={l.label} to={l.to} disabled={l.disabled} />
+              <LinkRow key={l.label} label={l.label} to={l.to} />
             ))}
           </div>
         </section>

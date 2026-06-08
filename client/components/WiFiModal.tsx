@@ -6,6 +6,25 @@ interface WiFiModalProps {
   onClose: () => void;
 }
 
+function WifiRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex items-center justify-between gap-4">
+      <span
+        className="text-base tracking-[-0.02em]"
+        style={{ fontFamily: "Open Sans, sans-serif", color: "#212530" }}
+      >
+        {label}
+      </span>
+      <span
+        className="text-sm font-bold tracking-[-0.02em] text-right"
+        style={{ fontFamily: "Open Sans, sans-serif", color: "#212530" }}
+      >
+        {value}
+      </span>
+    </div>
+  );
+}
+
 export default function WiFiModal({ isOpen, onClose }: WiFiModalProps) {
   if (!isOpen) return null;
 
@@ -22,11 +41,11 @@ export default function WiFiModal({ isOpen, onClose }: WiFiModalProps) {
         <div className="p-4">
           {/* Header */}
           <div className="flex items-start justify-between mb-4">
-            <h2 
+            <h2
               className="text-[28px] font-bold leading-tight tracking-[-0.02em]"
               style={{ fontFamily: 'Merriweather, serif', color: '#212530' }}
             >
-              Wi Fi Network
+              Wi Fi Networks
             </h2>
             <button
               onClick={onClose}
@@ -41,37 +60,17 @@ export default function WiFiModal({ isOpen, onClose }: WiFiModalProps) {
           <div className="border-t border-gray-200 mb-4" />
 
           {/* Content */}
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <span
-                className="text-base tracking-[-0.02em]"
-                style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
-              >
-                Wi Fi
-              </span>
-              <span
-                className="text-sm font-bold tracking-[-0.02em]"
-                style={{ fontFamily: 'Noto Sans, sans-serif', color: '#212530' }}
-              >
-                {wifi.primary.name}
-              </span>
+          <div className="space-y-6">
+            <div className="space-y-3">
+              <WifiRow label="Wi Fi (700Mbs)" value={wifi.primary.name} />
+              <div className="border-t border-gray-200" />
+              <WifiRow label="Password" value={wifi.primary.password} />
             </div>
 
-            <div className="border-t border-gray-200" />
-
-            <div className="flex items-center justify-between">
-              <span 
-                className="text-base tracking-[-0.02em]"
-                style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
-              >
-                Password
-              </span>
-              <span 
-                className="text-sm font-bold tracking-[-0.02em]"
-                style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
-              >
-                {wifi.primary.password}
-              </span>
+            <div className="space-y-3">
+              <WifiRow label="Back-up Wi Fi" value={wifi.support.name} />
+              <div className="border-t border-gray-200" />
+              <WifiRow label="Password" value={wifi.support.password} />
             </div>
           </div>
         </div>

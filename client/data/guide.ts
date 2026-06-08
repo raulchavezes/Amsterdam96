@@ -130,12 +130,6 @@ export const neighborhoodLinks = [
   { label: "Working from Condesa", to: "/working" },
   { label: "Food, Drinks & Groceries", to: "/food" },
   { label: "Cash, ATMS & Money Exchange", to: "/cash" },
-  { label: "Wander-Worthy spots", to: "/coming-soon", disabled: true },
-  { label: "Museums", to: "/coming-soon", disabled: true },
-  { label: "Restaurants", to: "/coming-soon", disabled: true },
-  { label: "Markets", to: "/coming-soon", disabled: true },
-  { label: "Exercise and Fitness", to: "/coming-soon", disabled: true },
-  { label: "Day & Weekend Trips", to: "/coming-soon", disabled: true },
 ];
 
 // -- Mexico Basics -------------------------------------------------------------

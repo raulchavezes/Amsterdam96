@@ -3,6 +3,20 @@ import GuideLayout from "@/components/GuideLayout";
 import StepGrid from "@/components/guide/StepGrid";
 import { apartmentAccess, keyboxImages } from "@/data/guide";
 
+function CodeLine({ code }: { code: string }) {
+  return (
+    <div
+      className="mt-3 flex items-center gap-2"
+      style={{ fontFamily: "Open Sans, sans-serif", color: "#212530" }}
+    >
+      <span className="text-sm">Code:</span>
+      <span className="text-lg font-bold tracking-wide">{code}</span>
+      <Plus className="w-5 h-5" strokeWidth={1.8} />
+      <LockKeyholeOpen className="w-5 h-5" strokeWidth={1.8} />
+    </div>
+  );
+}
+
 export default function Access() {
   return (
     <GuideLayout title="How to get in?">
@@ -14,16 +28,7 @@ export default function Access() {
         How to get into the apartment?
       </h2>
 
-      {/* Code */}
-      <div
-        className="mt-3 flex items-center gap-2"
-        style={{ fontFamily: "Open Sans, sans-serif", color: "#212530" }}
-      >
-        <span className="text-sm">Code:</span>
-        <span className="text-lg font-bold tracking-wide">{apartmentAccess.code}</span>
-        <Plus className="w-5 h-5" strokeWidth={1.8} />
-        <LockKeyholeOpen className="w-5 h-5" strokeWidth={1.8} />
-      </div>
+      <CodeLine code={apartmentAccess.code} />
 
       <div className="mt-5">
         <StepGrid steps={apartmentAccess.steps} />
@@ -53,7 +58,8 @@ export default function Access() {
       >
         Keybox
       </h3>
-      <div className="grid grid-cols-2 gap-4">
+      <CodeLine code={apartmentAccess.code} />
+      <div className="mt-4 grid grid-cols-2 gap-4">
         {keyboxImages.map((src, i) => (
           <div key={i} className="aspect-square overflow-hidden rounded-lg">
             <img src={src} alt="Keybox" className="h-full w-full object-cover" />
