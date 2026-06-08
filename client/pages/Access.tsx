@@ -86,7 +86,7 @@ function MainGateContent({ onVehicleAccessClick }: { onVehicleAccessClick: () =>
     <div className="w-full max-w-sm space-y-6">
       <div className="space-y-3">
         <h2
-          className="text-xl md:text-2xl font-normal tracking-[-0.02em] text-left"
+          className="text-lg md:text-xl font-normal tracking-[-0.02em] text-left"
           style={{ fontFamily: 'Merriweather, serif', color: '#212530' }}
         >
           ¿Cómo acceder al edificio?
@@ -157,7 +157,7 @@ function ApartmentContent() {
     <div className="w-full max-w-sm space-y-6">
       <div className="space-y-3">
         <h2
-          className="text-xl md:text-2xl font-normal tracking-[-0.02em] text-left"
+          className="text-lg md:text-xl font-normal tracking-[-0.02em] text-left"
           style={{ fontFamily: 'Merriweather, serif', color: '#212530' }}
         >
           ¿Cómo acceder al departamento 9A?
