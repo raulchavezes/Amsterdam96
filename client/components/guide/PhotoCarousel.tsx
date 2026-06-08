@@ -10,8 +10,8 @@ interface PhotoCarouselProps {
 /** Horizontal snap-scroll of apartment photos with a label overlay on each. */
 export default function PhotoCarousel({ photos }: PhotoCarouselProps) {
   return (
-    <div className="-mx-6 md:-mx-8 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
-      <div className="flex gap-3 px-6 md:px-8 pb-1">
+    <div className="-mr-6 md:-mr-8 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
+      <div className="flex gap-3 pr-6 md:pr-8 pb-1">
         {photos.map((photo, i) => (
           <div
             key={`${photo.label}-${i}`}

@@ -116,12 +116,12 @@ export const apartmentCards = [
 ];
 
 export const apartmentPhotos = [
-  { label: "Living room", image: apartment1 },
-  { label: "Dining room", image: apartment2 },
-  { label: "Master bedroom", image: apartment3 },
-  { label: "Bedroom 2", image: apartment4 },
-  { label: "Hallway", image: apartment5 },
-  { label: "Kitchen", image: apartment6 },
+  { label: "Terrace", image: apartment1 },
+  { label: "Living Room", image: apartment2 },
+  { label: "Dining room", image: apartment3 },
+  { label: "Master bedroom", image: apartment4 },
+  { label: "Second bedroom", image: apartment5 },
+  { label: "Hallway", image: apartment6 },
 ];
 
 // -- Neighborhood & city list (home menu) --------------------------------------
