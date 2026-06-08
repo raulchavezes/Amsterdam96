@@ -30,13 +30,13 @@ export default function Access() {
         </div>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-4 md:gap-8 px-4 md:px-14 py-4 pb-6">
+        <div className="flex justify-center gap-8 px-4 md:px-14 py-4">
           <button
             onClick={() => setActiveTab("main-gate")}
-            className={`text-lg md:text-2xl font-light tracking-[0.06em] transition-all whitespace-nowrap ${
+            className={`text-lg md:text-2xl font-light tracking-[0.06em] transition-all whitespace-nowrap pb-1 ${
               activeTab === "main-gate"
-                ? "underline decoration-from-font"
-                : ""
+                ? "border-b-[3px] border-black text-black"
+                : "border-b-[3px] border-transparent text-gray-400 hover:text-gray-600"
             }`}
             style={{ fontFamily: 'Merriweather, serif' }}
           >
@@ -44,10 +44,10 @@ export default function Access() {
           </button>
           <button
             onClick={() => setActiveTab("apartment")}
-            className={`text-lg md:text-2xl font-light tracking-[0.06em] transition-all whitespace-nowrap ${
+            className={`text-lg md:text-2xl font-light tracking-[0.06em] transition-all whitespace-nowrap pb-1 ${
               activeTab === "apartment"
-                ? "underline decoration-from-font"
-                : ""
+                ? "border-b-[3px] border-black text-black"
+                : "border-b-[3px] border-transparent text-gray-400 hover:text-gray-600"
             }`}
             style={{ fontFamily: 'Merriweather, serif' }}
           >
@@ -86,8 +86,8 @@ function MainGateContent({ onVehicleAccessClick }: { onVehicleAccessClick: () =>
     <div className="w-full max-w-sm space-y-6">
       <div className="space-y-3">
         <h2
-          className="text-base font-normal tracking-[-0.02em] text-left"
-          style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
+          className="text-xl md:text-2xl font-normal tracking-[-0.02em] text-left"
+          style={{ fontFamily: 'Merriweather, serif', color: '#212530' }}
         >
           ¿Cómo acceder al edificio?
         </h2>
@@ -157,8 +157,8 @@ function ApartmentContent() {
     <div className="w-full max-w-sm space-y-6">
       <div className="space-y-3">
         <h2
-          className="text-base font-normal tracking-[-0.02em] text-left"
-          style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
+          className="text-xl md:text-2xl font-normal tracking-[-0.02em] text-left"
+          style={{ fontFamily: 'Merriweather, serif', color: '#212530' }}
         >
           ¿Cómo acceder al departamento 9A?
         </h2>
@@ -168,7 +168,7 @@ function ApartmentContent() {
         >
           Código:{" "}
           <strong>
-            <u>6810</u>
+            <u>8341</u>
           </strong>
         </p>
       </div>
