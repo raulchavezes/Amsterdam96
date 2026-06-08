@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => ({
       deny: [".env", ".env.*", "*.{crt,pem}", "**/.git/**", "server/**"],
     },
   },
-  base: "/Carmina9A/",
+  base: "/Amsterdam96/",
   build: {
     outDir: "dist/spa",
   },

@@ -1,4 +1,5 @@
 import { X } from "lucide-react";
+import { wifi } from "@/data/guide";
 
 interface WiFiModalProps {
   isOpen: boolean;
@@ -42,17 +43,17 @@ export default function WiFiModal({ isOpen, onClose }: WiFiModalProps) {
           {/* Content */}
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <span 
+              <span
                 className="text-base tracking-[-0.02em]"
                 style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
               >
                 Wi Fi
               </span>
-              <span 
+              <span
                 className="text-sm font-bold tracking-[-0.02em]"
                 style={{ fontFamily: 'Noto Sans, sans-serif', color: '#212530' }}
               >
-                Bunker
+                {wifi.primary.name}
               </span>
             </div>
 
@@ -69,7 +70,7 @@ export default function WiFiModal({ isOpen, onClose }: WiFiModalProps) {
                 className="text-sm font-bold tracking-[-0.02em]"
                 style={{ fontFamily: 'Open Sans, sans-serif', color: '#212530' }}
               >
-                Argentina1986
+                {wifi.primary.password}
               </span>
             </div>
           </div>
