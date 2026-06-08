@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { MapPin, Wifi, Info, KeyRound, ChevronRight } from "lucide-react";
+import { MapPin, Wifi, KeyRound, ChevronRight } from "lucide-react";
 import GradientBackground from "@/components/GradientBackground";
 import BottomNav from "@/components/BottomNav";
 import WiFiModal from "@/components/WiFiModal";
@@ -45,7 +45,6 @@ export default function Home() {
               {property.guests}
             </h1>
           </div>
-          <Info className="w-6 h-6 mt-1 text-[#212530]" strokeWidth={1.6} />
         </div>
 
         {/* Address + wifi */}
@@ -81,15 +80,15 @@ export default function Home() {
           </div>
           <button
             onClick={() => navigate("/access")}
-            className="mt-3 flex w-full items-center justify-between gap-3 text-left hover:opacity-70 transition-opacity"
+            className="mt-3 flex w-full items-center justify-between gap-3 rounded-xl border border-black/10 bg-white/60 px-4 py-3.5 text-left shadow-sm backdrop-blur-sm transition-colors hover:bg-white/80"
             style={{ fontFamily: "Open Sans, sans-serif", color: "#212530" }}
           >
-            <span className="text-sm font-medium tracking-[-0.02em]">
+            <span className="text-base font-semibold tracking-[-0.02em]">
               How to get into the apartment?
             </span>
             <span className="flex items-center gap-1 shrink-0">
-              <KeyRound className="w-5 h-5" strokeWidth={1.6} />
-              <ChevronRight className="w-5 h-5" strokeWidth={1.6} />
+              <KeyRound className="w-5 h-5" strokeWidth={1.8} />
+              <ChevronRight className="w-5 h-5" strokeWidth={1.8} />
             </span>
           </button>
         </section>

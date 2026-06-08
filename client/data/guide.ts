@@ -33,7 +33,7 @@ export const keyboxImages = [keybox1, keybox2];
 export const property = {
   name: "Amsterdam 96",
   tagline: "Your guide for a unique CDMX experience",
-  guests: "Zak & Althea",
+  guests: "Vale",
   address: "Av. Amsterdam 96, Condesa",
   fullAddress: "Av. Amsterdam 96, Condesa, Cuauhtémoc, Mexico City",
   mapsUrl:

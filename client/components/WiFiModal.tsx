@@ -60,18 +60,14 @@ export default function WiFiModal({ isOpen, onClose }: WiFiModalProps) {
           <div className="border-t border-gray-200 mb-4" />
 
           {/* Content */}
-          <div className="space-y-6">
-            <div className="space-y-3">
-              <WifiRow label="Wi Fi (700Mbs)" value={wifi.primary.name} />
-              <div className="border-t border-gray-200" />
-              <WifiRow label="Password" value={wifi.primary.password} />
-            </div>
+          <div className="space-y-3">
+            <WifiRow label="Wi Fi (700Mbs)" value={wifi.primary.name} />
+            <WifiRow label="Password" value={wifi.primary.password} />
 
-            <div className="space-y-3">
-              <WifiRow label="Back-up Wi Fi" value={wifi.support.name} />
-              <div className="border-t border-gray-200" />
-              <WifiRow label="Password" value={wifi.support.password} />
-            </div>
+            <div className="border-t border-gray-200 !my-4" />
+
+            <WifiRow label="Back-up Wi Fi" value={wifi.support.name} />
+            <WifiRow label="Password" value={wifi.support.password} />
           </div>
         </div>
       </div>
