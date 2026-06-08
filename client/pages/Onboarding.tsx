@@ -1,10 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { property } from "@/data/guide";
+import { property, heroImage } from "@/data/guide";
 
-// Real splash photo can be dropped in here later: place it at
-// client/assets/guide/splash.jpg and `import splashImage from "@/assets/guide/splash.jpg"`.
-// Until then we fall back to a deep-red neon-evoking gradient.
-const splashImage: string | undefined = undefined;
+const splashImage = heroImage;
 
 export default function Onboarding() {
   const navigate = useNavigate();

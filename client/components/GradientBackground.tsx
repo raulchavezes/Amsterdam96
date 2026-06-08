@@ -41,8 +41,8 @@ export default function GradientBackground() {
             left: '-10%',
             top: '10%',
             background: 'linear-gradient(180deg, #FF9F39 0%, rgba(178, 178, 245, 0.52) 100%)',
-            filter: 'blur(100px)',
-            opacity: 0.9,
+            filter: 'blur(120px)',
+            opacity: 0.38,
             animation: 'float1 8s ease-in-out infinite'
           }}
         />
@@ -54,11 +54,14 @@ export default function GradientBackground() {
             right: '-15%',
             top: '15%',
             background: 'linear-gradient(135deg, rgba(156, 57, 255, 0.6) 0%, rgba(34, 34, 108, 0.52) 100%)',
-            filter: 'blur(100px)',
-            opacity: 0.9,
+            filter: 'blur(120px)',
+            opacity: 0.34,
             animation: 'float2 10s ease-in-out infinite'
           }}
         />
+
+        {/* Soft white wash to lift contrast for body text */}
+        <div className="absolute inset-0 bg-white/45" />
       </div>
     </>
   );

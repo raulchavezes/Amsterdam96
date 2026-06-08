@@ -76,7 +76,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-2 gap-3">
             {basicsCards.map((c) => (
-              <Card key={c.to} label={c.label} to={c.to} className="h-24" />
+              <Card key={c.to} label={c.label} to={c.to} image={c.image} labelBaked={c.labelBaked} className="h-24" />
             ))}
           </div>
           <button
@@ -99,10 +99,10 @@ export default function Home() {
           <h2 className={sectionHeading} style={{ fontFamily: "Merriweather, serif", color: "#212530" }}>
             Your apartment
           </h2>
-          <PhotoCarousel photos={apartmentPhotos.map((label) => ({ label }))} />
+          <PhotoCarousel photos={apartmentPhotos} />
           <div className="mt-3 grid grid-cols-2 gap-3">
             {apartmentCards.map((c) => (
-              <Card key={c.to} label={c.label} to={c.to} className="h-24" />
+              <Card key={c.to} label={c.label} to={c.to} image={c.image} labelBaked={c.labelBaked} className="h-24" />
             ))}
           </div>
         </section>

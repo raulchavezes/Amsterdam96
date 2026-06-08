@@ -1,7 +1,7 @@
 import { Plus, LockKeyholeOpen } from "lucide-react";
 import GuideLayout from "@/components/GuideLayout";
 import StepGrid from "@/components/guide/StepGrid";
-import { apartmentAccess } from "@/data/guide";
+import { apartmentAccess, keyboxImages } from "@/data/guide";
 
 export default function Access() {
   return (
@@ -54,24 +54,11 @@ export default function Access() {
         Keybox
       </h3>
       <div className="grid grid-cols-2 gap-4">
-        <div className="aspect-square overflow-hidden rounded-lg">
-          <div
-            className="h-full w-full"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(156,57,255,0.4) 0%, rgba(34,34,108,0.45) 100%)",
-            }}
-          />
-        </div>
-        <div className="aspect-square overflow-hidden rounded-lg">
-          <div
-            className="h-full w-full"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(255,159,57,0.5) 0%, rgba(178,178,245,0.5) 100%)",
-            }}
-          />
-        </div>
+        {keyboxImages.map((src, i) => (
+          <div key={i} className="aspect-square overflow-hidden rounded-lg">
+            <img src={src} alt="Keybox" className="h-full w-full object-cover" />
+          </div>
+        ))}
       </div>
       <p
         className="mt-4 text-sm leading-[150%] tracking-[-0.02em]"

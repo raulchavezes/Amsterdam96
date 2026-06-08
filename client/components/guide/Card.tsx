@@ -5,14 +5,23 @@ interface CardProps {
   to?: string;
   image?: string;
   className?: string;
+  /** When the supplied image already has its label + overlay baked in. */
+  labelBaked?: boolean;
 }
 
 /**
  * Image card with a label overlaid bottom-left (The basics, Your apartment).
  * Falls back to a soft gradient block when no image is supplied yet.
  */
-export default function Card({ label, to, image, className = "" }: CardProps) {
+export default function Card({
+  label,
+  to,
+  image,
+  className = "",
+  labelBaked = false,
+}: CardProps) {
   const navigate = useNavigate();
+  const showOverlay = !(image && labelBaked);
 
   return (
     <button
@@ -34,13 +43,17 @@ export default function Card({ label, to, image, className = "" }: CardProps) {
           }}
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
-      <span
-        className="absolute bottom-2 left-3 right-3 text-left text-sm font-medium text-white"
-        style={{ fontFamily: "Open Sans, sans-serif" }}
-      >
-        {label}
-      </span>
+      {showOverlay && (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+          <span
+            className="absolute bottom-2 left-3 right-3 text-left text-sm font-medium text-white"
+            style={{ fontFamily: "Open Sans, sans-serif" }}
+          >
+            {label}
+          </span>
+        </>
+      )}
     </button>
   );
 }

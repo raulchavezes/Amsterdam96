@@ -6,6 +6,30 @@
 // To reuse this guide for another stay, edit the values in this file.
 // =============================================================================
 
+// -- Image assets -------------------------------------------------------------
+import heroImg from "@/assets/guide/hero.png";
+import apartment1 from "@/assets/guide/apartment/apartment-1.png";
+import apartment2 from "@/assets/guide/apartment/apartment-2.png";
+import apartment3 from "@/assets/guide/apartment/apartment-3.png";
+import apartment4 from "@/assets/guide/apartment/apartment-4.png";
+import apartment5 from "@/assets/guide/apartment/apartment-5.png";
+import apartment6 from "@/assets/guide/apartment/apartment-6.png";
+import cardMexicoBasics from "@/assets/guide/home/mexico-basics.png";
+import cardLanding from "@/assets/guide/home/landing.png";
+import cardHouseBasics from "@/assets/guide/home/house-basics.png";
+import cardInternet from "@/assets/guide/home/internet-setup.png";
+import step1 from "@/assets/guide/howtogetin/step-1.png";
+import step2 from "@/assets/guide/howtogetin/step-2.png";
+import step3 from "@/assets/guide/howtogetin/step-3.png";
+import step4 from "@/assets/guide/howtogetin/step-4.png";
+import streetDoor from "@/assets/guide/howtogetin/street-door.png";
+import buildingDoor from "@/assets/guide/howtogetin/building-door.png";
+import keybox1 from "@/assets/guide/howtogetin/keybox-1.png";
+import keybox2 from "@/assets/guide/howtogetin/keybox-2.png";
+
+export const heroImage = heroImg;
+export const keyboxImages = [keybox1, keybox2];
+
 export const property = {
   name: "Amsterdam 96",
   tagline: "Your guide for a unique CDMX experience",
@@ -37,23 +61,27 @@ export const apartmentAccess = {
       step: "Step 1",
       title: "",
       caption: "Find the apartment #6 at the 2nd floor upstairs.",
+      image: step1,
     },
     {
       step: "Step 2",
       title: "",
       caption: "Locate the electric lock and tap it to activate it.",
+      image: step2,
     },
     {
       step: "Step 3",
       title: "",
       caption:
         "Tap on the 3 or 4 random numbers on the screen to active the full keyboard.",
+      image: step3,
     },
     {
       step: "Step 4",
       title: "",
       caption:
         "Once the keyboard is full active tap 0147 + Lock icon on the lower right. You’re ready to open the door!",
+      image: step4,
     },
   ],
   building: {
@@ -61,10 +89,12 @@ export const apartmentAccess = {
       {
         title: "Street Door",
         caption: "There is an building entrance door",
+        image: streetDoor,
       },
       {
         title: "Building door",
         caption: "Once inside the premise there is a building door",
+        image: buildingDoor,
       },
     ],
     note:
@@ -76,22 +106,22 @@ export const apartmentAccess = {
 
 // -- The basics & apartment cards (home menu) ----------------------------------
 export const basicsCards = [
-  { label: "Mexico Basics", to: "/mexico-basics" },
-  { label: "Landing in CDMX", to: "/landing" },
+  { label: "Mexico Basics", to: "/mexico-basics", image: cardMexicoBasics, labelBaked: false },
+  { label: "Landing in CDMX", to: "/landing", image: cardLanding, labelBaked: false },
 ];
 
 export const apartmentCards = [
-  { label: "House basics", to: "/house-basics" },
-  { label: "Internet setup", to: "/internet" },
+  { label: "House basics", to: "/house-basics", image: cardHouseBasics, labelBaked: false },
+  { label: "Internet setup", to: "/internet", image: cardInternet, labelBaked: false },
 ];
 
 export const apartmentPhotos = [
-  "Living room",
-  "Dining room",
-  "Master bedroom",
-  "Bedroom 2",
-  "Hallway",
-  "Kitchen",
+  { label: "Living room", image: apartment1 },
+  { label: "Dining room", image: apartment2 },
+  { label: "Master bedroom", image: apartment3 },
+  { label: "Bedroom 2", image: apartment4 },
+  { label: "Hallway", image: apartment5 },
+  { label: "Kitchen", image: apartment6 },
 ];
 
 // -- Neighborhood & city list (home menu) --------------------------------------
