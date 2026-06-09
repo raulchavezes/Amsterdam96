@@ -149,12 +149,12 @@ export const mexicoBasics = {
   cityFactsTitle: "Some Mexico City facts",
   cityFacts: [
     "Mexico City was the 2nd most populated city of the world for many years. However, according to a 2014 UN report, it is now the 4th largest city (Tokyo, Delhi and Shanghai are the top 3).",
-    "“Chilango” is the Mexican slang demonym for residents of Mexico City.",
+    "\"Chilango\" is the Mexican slang demonym for residents of Mexico City.",
     "There are 4 UNESCO World Heritage sites: the Historic Center, Xochimilco (a borough known for its canals and artificial islands), UNAM’s Campus C.U. (Mexico’s largest public university) and Luis Barragan’s House and Studio (a prominent Mexican architect).",
-    "The central square of the city, commonly known as “Zócalo”, is the second largest of the world.",
+    "The central square of the city, commonly known as \"Zócalo\", is the second largest of the world.",
     "Mexico City has the largest number of museums in the Americas and the second largest number in the world, after London (more than Madrid, New York or Paris!). It has 186 officially recognized museums and more than 200 if those with no official recognition are included.",
     "Bosque de Chapultepec is the biggest city park in America -- it is twice the size of New York’s Central Park!",
-    "The city has won over 400 Guinness Records. A few of the most notable ones are: The Biggest Flower Carpet in the World, The Largest Group of People Dancing “Thriller,” The Largest Group of Naked People in Public, The Biggest Vintage Cars Parade, The Largest Group of People Kissing.",
+    "The city has won over 400 Guinness Records. A few of the most notable ones are: The Biggest Flower Carpet in the World, The Largest Group of People Dancing \"Thriller,\" The Largest Group of Naked People in Public, The Biggest Vintage Cars Parade, The Largest Group of People Kissing.",
   ],
 };
 
@@ -175,11 +175,6 @@ export const landing = {
 export const houseBasics = {
   sections: [
     {
-      title: "Hola Alexa",
-      text:
-        "We have set a couple of Alexas to help you with anything during your stay. Just shout “Alexa...” and ask anything, from playing music, finding mexican recipies even turn on/off the terrace lights. Some handy Alexa requests: “Alexa prender / apagar terraza” - Turn on/off terrace lights “Alexa buenas noches” - Turn off all lights “Alexa Sala en 20” - Dim the light of the room",
-    },
-    {
       title: "Hot Water Heater & electricity",
       text:
         "To get hot water there is a boiler on the kitchen, all you need to do is turn on the switch beside to it to start heating the water. It should take around 15-20 minutes to get hot water. It’s really important that it’s TURN OFF if you are going to use any domestic appliance. Electricity in the city of Mexico, especially in La Condesa, is somewhat unstable. To avoid a short circuit it is best to keep the boiler off when not in use.",
@@ -197,7 +192,7 @@ export const houseBasics = {
     {
       title: "Housekeeping, garbage and laundry",
       text:
-        "Once a week on Fridays Fabiola help us with a deep cleaning of the apartment, she arrives around 9AM. If you want extra cleaning service, I can help you to schedule something with her. Also you can use Homely app to schedule; easy and secure. Garbage recollection happens 3 times a week, on Mondays, Wednesday and Fridays. On Fridays Fabiola will help you to take the trash out and on Mondays and Wednesdays Mrs. Teo (from the front apartment) will only pick up any garbage that you have on the front door from inside the apartment. Please do not put any garbage outside the apartment door. You will find 2 bins on the kitchen, one small for organic waste and one big for general waste. For laundry you can use the washer/dryer machine on the terrace. For fabric detergent and softener, I recommend going to Re (A Granel), a refill store with nice biodegradable supplies for personal and cleaning stuff, just couple streets away.",
+        "Garbage recollection happens 3 times a week, on Mondays, Wednesday and Fridays. Mrs. Teo (from the front apartment) will only pick up any garbage that you have on the front door from inside the apartment. Please do not put any garbage outside the apartment door. You will find 2 bins on the kitchen, one small for organic waste and one big for general waste. For laundry you can use the washer/dryer machine on the terrace. For fabric detergent and softener, I recommend going to Re (A Granel), a refill store with nice biodegradable supplies for personal and cleaning stuff, just couple streets away.",
     },
   ],
   questionTitle: "Any question?",
@@ -225,7 +220,7 @@ export const internet = {
     {
       title: "SIM Card + Mobile Data",
       text:
-        "You can get a SIM Card at any Oxxo, Circle K or Seven Eleven grocery store. No passport or ID needed to get one. You can top-up more credit at the store or do it online. We recommend Telcel SIM cards, since it’s easier to top-up online. Some USA mobile companies have coverage upon Mexico, check with your local company if they have this service. If you’re planning on getting a local SIM card, check that your phone is “open” or “unlocked” and can accept other SIM cards from other companies.",
+        "You can get a SIM Card at any Oxxo, Circle K or Seven Eleven grocery store. No passport or ID needed to get one. You can top-up more credit at the store or do it online. We recommend Telcel SIM cards, since it’s easier to top-up online. Some USA mobile companies have coverage upon Mexico, check with your local company if they have this service. If you’re planning on getting a local SIM card, check that your phone is \"open\" or \"unlocked\" and can accept other SIM cards from other companies.",
     },
   ],
 };
