@@ -51,14 +51,7 @@ export default function Onboarding() {
           className="w-full rounded-xl bg-white py-3.5 text-center text-base font-medium text-[#212530] shadow-lg transition-transform hover:scale-[1.02]"
           style={{ fontFamily: "Open Sans, sans-serif" }}
         >
-          Get started
-        </button>
-        <button
-          onClick={enter}
-          className="mt-4 text-sm text-white/90 underline underline-offset-4 hover:text-white"
-          style={{ fontFamily: "Open Sans, sans-serif" }}
-        >
-          skip
+          vamos
         </button>
       </div>
     </div>
