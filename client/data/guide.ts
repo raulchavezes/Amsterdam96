@@ -215,7 +215,7 @@ export const internet = {
   sections: [
     {
       title: "Internet Speed",
-      text: "Up to 200 Mbps",
+      text: "Up to 700 Mbps",
     },
     {
       title: "Ethernet",
