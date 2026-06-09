@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, useEffect } from "react";
 import { ChevronLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import GradientBackground from "./GradientBackground";
@@ -22,6 +22,10 @@ export default function GuideLayout({
 }: GuideLayoutProps) {
   const navigate = useNavigate();
   const [contactOpen, setContactOpen] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="relative min-h-screen">
