@@ -21,7 +21,7 @@ export default function Onboarding() {
         <img
           src={splashImage}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover object-[70%_30%]"
           onError={(e) => {
             (e.currentTarget as HTMLImageElement).style.display = "none";
           }}

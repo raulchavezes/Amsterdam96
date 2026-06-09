@@ -7,7 +7,7 @@
 // =============================================================================
 
 // -- Image assets -------------------------------------------------------------
-import heroImg from "@/assets/guide/hero.png";
+import heroImg from "@/assets/guide/hero.jpg";
 import apartment1 from "@/assets/guide/apartment/apartment-1.png";
 import apartment2 from "@/assets/guide/apartment/apartment-2.png";
 import apartment3 from "@/assets/guide/apartment/apartment-3.png";
